@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+:root {
+	--primary: #cfb000;
+	--blanco: #ffffff;
+	--gris: rgb(194, 193, 193);
+	--light-grey: #dbdbdb;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Poppins' !important;
+}
+/* HEADER */
+.navbar {
+	background-color: white !important;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+	min-height: 70px;
+}
+.extencion {
+	color: var(--primary);
+}
+.nav-link {
+	color: black !important;
+}
+
+.navbar ul li a {
+	position: relative;
+	display: block;
+	padding: 0.2rem;
+	color: rgb(255, 255, 255);
+	font-size: 1rem;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.navbar ul li a::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0%;
+	height: 0.2rem;
+	background: var(--primary);
+	transition: 0.7s;
+}
+
+.navbar ul li:hover a::before {
+	width: 100%;
+}
+
+/* /HEADER */
+
+/* MAIN */
+#hero {
+	background-image: url(/img/IMAGEN-1.png);
+	background-size: cover;
+	padding-top: 90px;
+	min-height: 700px;
+	color: var(--blanco);
+}
+
+.row h1 {
+	font-size: 3rem;
+	padding-top: 7rem;
+}
+
+.row p {
+	font-size: 1.2rem;
+	padding-top: 1rem;
+	color: var(--gris);
+}
+
+.row button {
+	transition: all 0.3s linear;
+}
+
+.row button:hover {
+	transform: scale(1.1);
+}
+
+.row .btn {
+	margin-top: 1rem;
+}
+
+.icons {
+	height: 6px;
+}
+
+.btn i {
+	margin-left: 2px;
+}
+
+/* /MAIN */
+
+/* PORTAFOLIO */
+
+.row h2 {
+	font-size: 3rem;
+	padding-top: 7rem;
+}
+
+#Portafolio p {
+	color: black;
+}
+/* 	 CARDS  */
+
+.card-img-filter {
+	filter: brightness(0.3);
+}
+
+.card a {
+	transition: all 0.3s linear;
+}
+.card a:hover {
+	border: var(--primary) !important;
+	background-color: var(--primary) !important;
+	transform: scale(1.1);
+}
+/* /PORTAFOLIO */
+
+/* /TESTIMONIOS*/
+
+.bg-light-grey {
+	background-color: var(--light-grey);
+	margin-top: 4rem;
+	/* height: 100%; */
+}
+
+#Testimonios p {
+	color: black;
+}
+
+/* /TESTIMONIOS */
+
+.form-row button {
+	background-color: var(--primary) !important;
+	border: var(--primary) !important;
+}
+
+.form-control {
+	border: 2px solid var(--primary) !important;
+}
+
+#footer a {
+	color: whitesmoke;
+	text-decoration: none;
+}
+
+#footer {
+	background-color: #343a40;
+	margin-top: 2rem;
+}
+
+#footer a:hover {
+	color: var(--primary);
+}
